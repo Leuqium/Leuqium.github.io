@@ -1,3 +1,9 @@
+html {
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    text-rendering: optimizeLegibility !important;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -326,5 +332,48 @@ footer {
 
 //text paragraph
 .text {
+    text-align: center;
+}
+
+// TERMS OF SERVICE
+div#paragraph {
+    width: 50%;
+    margin: 0 auto;
+    border-top: 1px solid rgb(233, 233, 233);
+    margin-bottom: 60px;
+}
+
+div#paragraph p {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+}
+
+li.nostyle {
+    list-style-type: circle;
+}
+
+//ABOUTME
+div#aboutme {
+    max-width: 65%;
+    width: 50%;
+    margin: 0 auto;
+    border-top: 1px solid rgb(233, 233, 233);
+    margin-bottom: 60px;
+}
+
+div#aboutmetxt {
+    background-color: rgb(245, 245, 245);
+    margin: 12px;
+    padding: 12px;
+}
+
+div#aboutmetxt p {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+}
+
+div#aboutme h2 {
     text-align: center;
 }

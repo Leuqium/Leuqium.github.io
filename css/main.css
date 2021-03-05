@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+html {
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -316,6 +322,47 @@ footer {
 }
 
 .text {
+  text-align: center;
+}
+
+div#paragraph {
+  width: 50%;
+  margin: 0 auto;
+  border-top: 1px solid #e9e9e9;
+  margin-bottom: 60px;
+}
+
+div#paragraph p {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2;
+}
+
+li.nostyle {
+  list-style-type: circle;
+}
+
+div#aboutme {
+  max-width: 65%;
+  width: 50%;
+  margin: 0 auto;
+  border-top: 1px solid #e9e9e9;
+  margin-bottom: 60px;
+}
+
+div#aboutmetxt {
+  background-color: whitesmoke;
+  margin: 12px;
+  padding: 12px;
+}
+
+div#aboutmetxt p {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2;
+}
+
+div#aboutme h2 {
   text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
