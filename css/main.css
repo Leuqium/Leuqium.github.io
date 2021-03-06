@@ -179,6 +179,7 @@ ul.social-icons {
   font-size: 11px;
   background-color: #fdfdfd !important;
   border-radius: 0px;
+  color: black;
 }
 
 .btn {
@@ -192,6 +193,39 @@ ul.social-icons {
   background-color: #babac2 !important;
   color: white !important;
   border-radius: 0px;
+}
+
+.dropdown-menu {
+  font-size: 11px;
+  background-color: #fdfdfd !important;
+  border-radius: 0px;
+  color: black;
+}
+
+.dropdown-item {
+  color: black;
+  font-size: 11px !important;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.dropdown-item:hover {
+  background-color: #babac2 !important;
+  color: white !important;
+  border-radius: 0px;
+}
+
+#comm-dropdown {
+  font-size: 11px;
+  background-color: #fdfdfd !important;
+  border-radius: 0px;
+  color: black;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, 0, 0);
+          transform: translate3d(-50%, 0, 0);
 }
 
 .container {
@@ -367,5 +401,13 @@ div#aboutmetxt p {
 
 div#aboutme h2 {
   text-align: center;
+}
+
+.avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60px;
+  padding-top: 60px;
 }
 /*# sourceMappingURL=main.css.map */
