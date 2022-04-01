@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
 html {
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
@@ -19,6 +20,10 @@ h1 {
 img {
   width: 100%;
   padding-bottom: 12px;
+}
+
+header {
+  font-family: Noto Serif, serif;
 }
 
 .menu {
@@ -240,11 +245,11 @@ ul.social-icons {
 
 .portfolio {
   background: rgba(0, 0, 0, 0.9);
-  padding: 30px;
+  padding-top: 30px;
 }
 
 .container {
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -277,7 +282,42 @@ ul.social-icons {
   font-size: 1em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 200px) {
+  .container {
+    width: 100%;
+  }
+  h1 {
+    margin: 3em 0;
+  }
+  .grid-col--1 {
+    display: block;
+  }
+  .grid-col {
+    padding: 0 .5em;
+  }
+  .post {
+    margin-bottom: .8em;
+    border-radius: 8px;
+  }
+  .content {
+    opacity: 0;
+    -webkit-transform: translateX(-0.5em);
+            transform: translateX(-0.5em);
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    will-change: opacity, transform;
+  }
+  .grid-item:hover {
+    cursor: pointer;
+  }
+  .grid-item:hover .content {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@media (min-width: 500px) {
   .container {
     width: 90%;
   }
@@ -336,12 +376,12 @@ p {
 }
 
 .fade-in {
-  animation: fadein 2s;
-  -moz-animation: fadein 2s;
+  animation: fadein 3s;
+  -moz-animation: fadein 3s;
   /* Firefox */
-  -webkit-animation: fadein 2s;
+  -webkit-animation: fadein 3s;
   /* Safari and Chrome */
-  -o-animation: fadein 2s;
+  -o-animation: fadein 3s;
   /* Opera */
 }
 
@@ -378,11 +418,22 @@ footer {
   text-align: center;
 }
 
-div#paragraph {
-  width: 75%;
-  margin: 0 auto;
-  border-top: 1px solid #e9e9e9;
-  margin-bottom: 60px;
+@media (min-width: 200px) {
+  div#paragraph {
+    width: 85%;
+    margin: 0 auto;
+    border-top: 1px solid #e9e9e9;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 900px) {
+  div#paragraph {
+    width: 55%;
+    margin: 0 auto;
+    border-top: 1px solid #e9e9e9;
+    margin-bottom: 60px;
+  }
 }
 
 div#paragraph p {
@@ -417,6 +468,16 @@ div#aboutmetxt p {
 
 div#aboutme h2 {
   text-align: center;
+}
+
+div#aboutmetxt h2 {
+  text-align: left;
+  font-family: 'Noto Serif', serif;
+}
+
+div#aboutmetxt h3 {
+  text-align: left;
+  font-family: 'Noto Serif', serif;
 }
 
 .avatar {
