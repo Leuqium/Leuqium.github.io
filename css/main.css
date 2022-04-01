@@ -21,6 +21,12 @@ img {
   padding-bottom: 12px;
 }
 
+.menu {
+  background: #f9f9f9;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
 .about {
   text-align: center;
   padding-bottom: 10px;
@@ -228,6 +234,15 @@ ul.social-icons {
           transform: translate3d(-50%, 0, 0);
 }
 
+.artwork {
+  border-radius: 4px;
+}
+
+.portfolio {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 30px;
+}
+
 .container {
   width: 95%;
   margin: 0 auto;
@@ -277,6 +292,7 @@ ul.social-icons {
   }
   .post {
     margin-bottom: .8em;
+    border-radius: 8px;
   }
   .content {
     opacity: 0;
@@ -408,6 +424,6 @@ div#aboutme h2 {
   margin-left: auto;
   margin-right: auto;
   width: 60px;
-  padding-top: 60px;
+  padding-top: 40px;
 }
 /*# sourceMappingURL=main.css.map */
